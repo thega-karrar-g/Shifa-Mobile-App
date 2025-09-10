@@ -6,7 +6,6 @@ import 'package:globcare/app/core/assets_helper/app_images.dart';
 import 'package:globcare/app/core/theme_helper/app_colors.dart';
 import 'package:globcare/app/core/theme_helper/app_styles.dart';
 import 'package:globcare/app/global_widgets/shared/ui_helpers.dart';
-import 'package:globcare/app/utils/string_reverse.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/language_and_localization/app_strings.dart';

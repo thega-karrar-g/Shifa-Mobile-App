@@ -5,7 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:globcare/app/global_widgets/action_buttons/action_button.dart';
-import 'package:globcare/app/utils/string_reverse.dart';
 
 import '../../../../../core/assets_helper/app_images.dart';
 import '../../../../../core/language_and_localization/app_strings.dart';

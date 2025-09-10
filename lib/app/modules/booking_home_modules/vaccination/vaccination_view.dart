@@ -55,7 +55,7 @@ class VaccinationPage extends StatelessWidget {
                               data: logic.items,
                               itemBuilder: (item) => GestureDetector(
                                   onTap: () {
-                                    logic.updateItems(item as NurseService);
+                                    logic.updateItems(item);
                                   },
                                   child: ServiceItem(
                                     nurseService: item as NurseService,

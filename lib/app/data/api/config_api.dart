@@ -18,7 +18,7 @@ class ConfigApi extends BaseApi {
         AppUrls.appVersion,
       );
       return response.data;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
       //
     }
     return {ApiKeys.responseSuccess: 0};

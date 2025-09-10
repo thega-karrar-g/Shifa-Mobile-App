@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 import '../../../core/language_and_localization/app_strings.dart';
@@ -8,21 +7,17 @@ import '../../../core/theme_helper/app_colors.dart';
 import '../../../core/theme_helper/app_styles.dart';
 import '../../../data/constants/booking_constants.dart';
 import '../../../data/enums.dart';
-import '../../../global_widgets/audio/record_widget.dart';
 import '../../../global_widgets/shared/loading.dart';
 import '../../../global_widgets/shared/my_appbar.dart';
 import '../../../global_widgets/shared/ui_helpers.dart';
 import '../../../global_widgets/ui.dart';
 import '../../auth/widgets/reactive_login_form.dart';
 import '../../auth/widgets/reactive_register_form.dart';
-import '../../my_profile_module/members/widgets/reactive_add_member_form.dart';
 import '../choose_date_period/choose_date_period_view.dart';
 import '../pcr/choose_date/choose_date_view.dart';
 import 'patient_data_logic.dart';
 import 'widgets/caregiver_contract_details.dart';
-import 'widgets/file_item.dart';
 import 'widgets/notes_widget.dart';
-import 'widgets/patient_item.dart';
 import 'widgets/select_attatchment.dart';
 import 'widgets/select_branch.dart';
 import 'widgets/select_nationality.dart';

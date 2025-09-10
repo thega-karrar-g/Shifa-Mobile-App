@@ -17,6 +17,8 @@ class ObservationPage extends StatelessWidget {
   final logic = Get.put(ObservationLogic());
   static const routeName = '/ObservationPage';
 
+    ObservationPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Ui.myScaffold(

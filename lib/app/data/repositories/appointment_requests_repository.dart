@@ -7,10 +7,8 @@ import 'package:dio/dio.dart';
 import '../api/api_keys.dart';
 import '../api/app_urls.dart';
 import '../api/base_api.dart';
-import '../api/request_api.dart';
 import '../models/caregiver_contract_model.dart';
 import '../models/refund_request_model.dart';
-import '../models/request_model.dart';
 import '../models/sleep_medicine_model.dart';
 
 class AppointmentRequestsRepository extends BaseApi{
@@ -64,7 +62,7 @@ class AppointmentRequestsRepository extends BaseApi{
       } else {
         return [];
       }
-    }on DioException catch (e) {
+    } on DioException {
       // print('err   ***************************  ${e.message.toString()}');
       return [];
     }

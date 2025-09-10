@@ -18,6 +18,8 @@ class PainPresentPage extends StatelessWidget {
   final logic = Get.put(PainPresentLogic());
   static const routeName = '/PainPresentPage';
 
+    PainPresentPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Ui.myScaffold(

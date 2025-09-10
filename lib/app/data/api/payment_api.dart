@@ -17,7 +17,7 @@ class PaymentApi extends BaseApi {
         AppUrls.requestedPayment + currentUser!.id,
       );
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
       //
       return null;
     }
@@ -28,7 +28,7 @@ class PaymentApi extends BaseApi {
     try {
       var response = await api.httpPost(AppUrls.paymentChecker, body: body);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
       //
       return null;
     }
@@ -40,7 +40,7 @@ class PaymentApi extends BaseApi {
         AppUrls.insurance,
       );
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
       //
       return null;
     }

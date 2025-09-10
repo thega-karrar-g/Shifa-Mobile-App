@@ -24,6 +24,8 @@ class RadiologyLabServicesPage extends StatelessWidget {
   final logic = Get.put(RadiologyLabServicesLogic());
   final GlobalKey globalKey = GlobalKey();
 
+  RadiologyLabServicesPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Ui.myScaffold(
@@ -94,12 +96,12 @@ class RadiologyLabServicesPage extends StatelessWidget {
                             )
                           : GestureDetector(
                               onTap: () {
-                                logic.updateItems(item as NurseService);
+                                logic.updateItems(item);
                               },
                               child: GestureDetector(
                                   onTap: () {
                                     // logic.navToTimeSlots(item as NurseService);
-                                    logic.updateItems(item as NurseService);
+                                    logic.updateItems(item);
                                     PatientDataLogic.chooseDateType =
                                         ChooseDateType.other;
                                   },

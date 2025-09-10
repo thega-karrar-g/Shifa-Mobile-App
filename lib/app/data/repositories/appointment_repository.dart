@@ -155,7 +155,7 @@ else{
 
       }
 
-    }on Exception catch (e) {
+    }on Exception {
 
       // logger.i(e.toString());
       return failResponse;

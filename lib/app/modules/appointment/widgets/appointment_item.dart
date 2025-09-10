@@ -189,14 +189,14 @@ class AppointmentItem extends StatelessWidget {
         return Row(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
+          children: const [
             FaIcon(
               FontAwesomeIcons.mapMarkerAlt,
               size: 14,
               color: AppColors.extraGrey,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 8.0),
+              padding: EdgeInsets.only(left: 8.0),
               child: Text(
                 'clinic_visit',
                 style: (TextStyle(color: AppColors.extraGrey)),
@@ -208,14 +208,14 @@ class AppointmentItem extends StatelessWidget {
         return Row(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
+          children: const [
             FaIcon(
               FontAwesomeIcons.phoneAlt,
               size: 14,
               color: AppColors.extraGrey,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 8.0),
+              padding: EdgeInsets.only(left: 8.0),
               child: Text(
                 'call_visit',
                 style: (TextStyle(color: AppColors.extraGrey)),

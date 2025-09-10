@@ -8,7 +8,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
 
 import '../data/models/push_notification_model.dart';
-import '../modules/booking_home_modules/instant_consultation_module/instant_consultation_home/instant_consultation_home_view.dart';
 import '../routes/app_route_names.dart';
 
 class LocalNotificationService {
@@ -24,7 +23,7 @@ class LocalNotificationService {
   static FlutterLocalNotificationsPlugin? flutterLocalNotificationsPlugin;
 
   AndroidInitializationSettings? androidInitializationSettings;
-  IOSInitializationSettings? iosInitializationSettings;
+  DarwinInitializationSettings? iosInitializationSettings;
 
   // MacOSInitializationSettings initializationSettingsMacOS;
   InitializationSettings? initializationSettings;
@@ -51,7 +50,7 @@ class LocalNotificationService {
     // AndroidInitializationSettings('ic_launcher');
 
     //ios setting init
-    iosInitializationSettings = IOSInitializationSettings(
+    iosInitializationSettings = DarwinInitializationSettings(
         onDidReceiveLocalNotification: onDidReceiveLocalNotification);
 
     // //MacOS setting init
@@ -70,7 +69,9 @@ class LocalNotificationService {
     // pass InitializationSettings to flutterLocalNotificationsPlugin
     await flutterLocalNotificationsPlugin?.initialize(
       initializationSettings!,
-      onSelectNotification: onSelectNotification,
+      onDidReceiveNotificationResponse: (NotificationResponse response) {
+        onSelectNotification(response.payload);
+      },
     );
 
     notificationAppLaunchDetails = await flutterLocalNotificationsPlugin
@@ -189,7 +190,7 @@ playSound: true,
 
         );
 
-    IOSNotificationDetails iosNotificationDetails = IOSNotificationDetails(
+    DarwinNotificationDetails iosNotificationDetails = DarwinNotificationDetails(
       presentAlert: true,
       presentBadge: true,
       presentSound: true,
@@ -237,7 +238,7 @@ playSound: true,
 
         );
 
-    IOSNotificationDetails iosNotificationDetails = IOSNotificationDetails(
+    DarwinNotificationDetails iosNotificationDetails = DarwinNotificationDetails(
       presentAlert: true,
       presentBadge: true,
       presentSound: true,

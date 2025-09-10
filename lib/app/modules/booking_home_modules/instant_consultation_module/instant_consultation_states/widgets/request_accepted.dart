@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:intl/intl.dart';
 import 'package:globcare/app/core/language_and_localization/ar.dart';
 
 import '../../../../../core/language_and_localization/app_strings.dart';

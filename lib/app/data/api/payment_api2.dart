@@ -26,7 +26,7 @@ class PaymentApi extends BaseApi {
           'https://eazycare.app/api/v1/direct-order',
           body: mBody);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
       //
       return null;
     }

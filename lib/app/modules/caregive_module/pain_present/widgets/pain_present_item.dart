@@ -36,7 +36,7 @@ UiHelper.horizontalSpaceSmall,
           ),
 
          Expanded(
-           child: Text.rich(TextSpan(text: text,style:AppStyles.primaryStyle(bold: false,color: AppColors.primaryColor,fontSize: 15,height: 1.5) ,children: [
+           child: Text.rich(TextSpan(text: text,style:AppStyles.primaryStyle(bold: false,color: AppColors.primaryColor,fontSize: 15,height: 1.5) ,children: const [
              // WidgetSpan(child: UiHelper.horizontalSpaceSmall),
              // TextSpan(text: text,style: AppStyles.primaryStyle(bold: false,size: 15,height: 1.5)),
 

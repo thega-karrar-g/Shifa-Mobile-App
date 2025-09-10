@@ -11,7 +11,6 @@ import '../../../core/assets_helper/app_images.dart';
 import '../../../core/language_and_localization/app_strings.dart';
 import '../../../data/constants/booking_constants.dart';
 import '../../../data/models/home_service.dart';
-import '../../../data/models/nurse_service.dart';
 import '../../../global_widgets/shared/different_dialogs.dart';
 import '../../../routes/app_route_names.dart';
 import '../../doctor_module/doctors/doctors_controller.dart';

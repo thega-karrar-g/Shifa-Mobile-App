@@ -122,7 +122,7 @@ if(logic.showPrice())
 
                                               )
                                           ),
-                                          child: Text(logic.nurseService!.price+'   '+AppStrings.currency.tr,style: AppStyles.whiteStyle(bold: true),),
+                                          child: Text('${logic.nurseService!.price}   ${AppStrings.currency.tr}',style: AppStyles.whiteStyle(bold: true),),
 
                                         )
                                           ],

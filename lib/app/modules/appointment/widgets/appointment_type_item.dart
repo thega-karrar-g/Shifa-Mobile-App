@@ -2,14 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import '../../../base_controller/base_controller.dart';
 import '../../../core/language_and_localization/app_strings.dart';
 import '../../../core/theme_helper/app_colors.dart';
 import '../../../core/theme_helper/app_styles.dart';
-import '../../../data/constants/booking_constants.dart';
 import '../../../data/models/home_service.dart';
 import '../../../global_widgets/shared/ui_helpers.dart';
-import '../../booking_home_modules/service_details/service_details_logic.dart';
 
 class AppointmentTypeItem extends StatelessWidget {
   AppointmentTypeItem({Key? key, this.homeService,required this.onTab}) : super(key: key);

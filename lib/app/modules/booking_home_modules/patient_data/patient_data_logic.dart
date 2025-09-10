@@ -3,7 +3,7 @@ import 'dart:math';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_image/flutter_native_image.dart';
+import 'package:flutter_native_image_v2/flutter_native_image.dart';
 import 'package:get/get.dart';
 import 'package:globcare/app/modules/booking_home_modules/nurse_services/nurse_services_logic.dart';
 import 'package:image_picker/image_picker.dart';
@@ -19,7 +19,6 @@ import '../../../data/models/user_model.dart';
 import '../../../data/repositories/profile_repository.dart';
 import '../../../routes/app_route_names.dart';
 import '../../../data/api/api_keys.dart';
-import '../appointment_base_controllers/appointment_base_controller.dart';
 import '../choose_date_period/choose_date_period_logic.dart';
 import '../pcr/choose_date/choose_date_logic.dart';
 

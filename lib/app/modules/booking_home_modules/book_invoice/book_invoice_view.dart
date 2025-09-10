@@ -6,18 +6,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
-import '../../../core/assets_helper/app_images.dart';
 import '../../../core/language_and_localization/app_strings.dart';
 import '../../../core/theme_helper/app_colors.dart';
 import '../../../core/theme_helper/app_styles.dart';
 import '../../../data/constants/booking_constants.dart';
-import '../../../global_widgets/project_widget/price_item.dart';
 import '../../../global_widgets/shared/my_appbar.dart';
 import '../../../global_widgets/ui.dart';
 import '../../../routes/app_route_names.dart';
 import 'book_invoice_logic.dart';
 import 'widgets/checkout_card_widget.dart';
-import 'widgets/coupon_widget.dart';
 import 'widgets/login_widget.dart';
 
 class BookInvoicePage extends StatelessWidget {

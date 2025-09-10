@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:globcare/app/modules/auth/auth_controller.dart';
 
 import '../data/models/user_model.dart';
 import '../routes/app_route_names.dart';

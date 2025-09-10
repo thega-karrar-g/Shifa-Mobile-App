@@ -21,7 +21,7 @@ class DoctorApi extends BaseApi {
         doctorsUrl,
       );
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
       return null;
 
       //
@@ -45,7 +45,7 @@ class DoctorApi extends BaseApi {
       var response = await api.dioGet(url);
       // print(response.data.toString());
       return response;
-    } on DioError catch (e) {
+    } on DioException catch (e) {
       return e.response;
     }
   }
@@ -54,7 +54,7 @@ class DoctorApi extends BaseApi {
     try {
       var response = await api.dioGet(AppUrls.doctorSchedule + id);
       return response;
-    } on DioError catch (e) {
+    } on DioException catch (e) {
       return e.response;
     }
   }

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:connectivity/connectivity.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_disposable.dart';
 
 import '../data/enums.dart';
@@ -12,7 +12,7 @@ class ConnectivityController extends GetxService {
   StreamController<ConnectivityStatus> connectionStatusController =
       StreamController<ConnectivityStatus>();
 
-  late ConnectivityStatus currentConnectivityStatus;
+  late ConnectivityStatus currentConnectivityStatus=ConnectivityStatus.offline;
 
   @override
   void onInit() {
@@ -26,7 +26,7 @@ class ConnectivityController extends GetxService {
     _connectivity.onConnectivityChanged.listen((ConnectivityResult result) {
       // Use Connectivity() here to gather more info if you need t
       connectionStatusController.sink.add(_getStatusFromResult(result));
-    });
+    } as void Function(List<ConnectivityResult> event)?);
   }
 
   Future checkWhenStreamIsNull() async {

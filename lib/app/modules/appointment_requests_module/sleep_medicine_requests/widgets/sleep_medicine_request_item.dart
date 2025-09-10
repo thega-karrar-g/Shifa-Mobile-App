@@ -1,13 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:globcare/app/core/assets_helper/app_images.dart';
 import 'package:globcare/app/core/language_and_localization/app_strings.dart';
 import 'package:globcare/app/core/theme_helper/app_styles.dart';
 import 'package:globcare/app/global_widgets/shared/ui_helpers.dart';
-import 'package:globcare/app/utils/string_reverse.dart';
 
 import '../../../../core/theme_helper/app_colors.dart';
 import '../../../../data/models/sleep_medicine_model.dart';

@@ -10,13 +10,12 @@ class DynamicListView<T> extends StatefulWidget {
   final List<dynamic> data;
   final ItemBuilder<dynamic> itemBuilder;
   @override
-  final GlobalKey? key;
+  final GlobalKey? globalKey;
 
-  DynamicListView(
-      {required this.data,
+  DynamicListView({super.key,   required this.data,
       this.axis = Axis.vertical,
       required this.itemBuilder,
-      this.key});
+      this.globalKey});
 
   @override
   _DynamicListViewState createState() => _DynamicListViewState();

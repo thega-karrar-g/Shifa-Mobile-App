@@ -42,11 +42,11 @@ class PrescribedMedicineLogic extends BaseController {
 
 
 
-  updateMedicineStatus(String _status){
+  updateMedicineStatus(String status){
 
-    medicineStatus=_status;
+    medicineStatus=status;
 
-    currentMedicines=allMedicines.where((element) => element.status==_status).toList();
+    currentMedicines=allMedicines.where((element) => element.status==status).toList();
     update();
 
 

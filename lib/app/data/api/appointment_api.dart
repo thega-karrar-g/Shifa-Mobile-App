@@ -1,6 +1,4 @@
 import 'package:dio/dio.dart' as d;
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:globcare/app/base_controller/base_controller.dart';
 import 'package:http/http.dart' as http;
 
 import 'app_urls.dart';

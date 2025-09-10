@@ -2,13 +2,10 @@ import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:dio/dio.dart';
-import 'package:get/get.dart';
-import 'package:globcare/app/data/models/m_file.dart';
 import 'package:open_file_plus/open_file_plus.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-import '../modules/pdf_page/pdf_page_view.dart';
 
 class ExtStorage {
   static Future<Directory> getDir() async {
@@ -19,15 +16,15 @@ class ExtStorage {
         : await getApplicationSupportDirectory();
 
     //directory=Directory(ex!.path+'/Globcare');
-    directory = ex!;
+    directory = ex;
 
-    if (!await ex.exists()) {
-      directory = await Directory(directory.path).create(
+    if (!await ex!.exists()) {
+      directory = await Directory(directory!.path).create(
         recursive: true,
       );
       return directory;
     } else {
-      return directory;
+      return directory!;
     }
   }
 
@@ -80,7 +77,7 @@ class ExtStorage {
           //you can build progressbar feature too
         }
       });
-    } on DioError catch (_) {
+    } on DioException catch (_) {
     }
   }
 
@@ -146,6 +143,7 @@ class ExtStorage {
         await openAppSettings();
       }
     }
+    return null;
 
   }
 

@@ -21,22 +21,18 @@ class ThemeModeController extends GetxController {
       AppBoxesNames.themeBoxMode,
     );
 
-    if (themeMode != null) {
-      switch (themeMode) {
-        case 'ThemeMode.light':
-          selectedThemeMode.value = ThemeMode.light;
-          break;
-        case 'ThemeMode.dark':
-          selectedThemeMode.value = ThemeMode.dark;
-          break;
-        case 'ThemeMode.system':
-          selectedThemeMode.value = ThemeMode.system;
-          break;
-        default:
-          selectedThemeMode.value = ThemeMode.system;
-      }
-    } else {
-      themeMode = 'ThemeMode.light';
+    switch (themeMode) {
+      case 'ThemeMode.light':
+        selectedThemeMode.value = ThemeMode.light;
+        break;
+      case 'ThemeMode.dark':
+        selectedThemeMode.value = ThemeMode.dark;
+        break;
+      case 'ThemeMode.system':
+        selectedThemeMode.value = ThemeMode.system;
+        break;
+      default:
+        selectedThemeMode.value = ThemeMode.system;
     }
   }
 

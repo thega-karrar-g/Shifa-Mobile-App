@@ -9,9 +9,7 @@ import '../../core/theme_helper/app_colors.dart';
 import '../../core/theme_helper/app_styles.dart';
 import '../../core/theme_helper/my_flutter_app_icons.dart';
 import '../../global_widgets/shared/ui_helpers.dart';
-import '../appointment/appointment_types_logic.dart';
 import '../drawer_module/drawer_widget/main_drawer_widget.dart';
-import '../home_screen/home_screen_controller.dart';
 import '../home_screen/home_screen_view.dart';
 import 'home_tabs_controller.dart';
 

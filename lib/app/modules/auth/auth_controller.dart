@@ -21,7 +21,6 @@ import '../booking_home_modules/instant_consultation_module/instant_consultation
 import '../booking_home_modules/instant_consultation_module/instant_consultation_home/instant_consultation_home_view.dart';
 import '../booking_home_modules/instant_consultation_module/instant_consultation_states/instant_consultation_states_logic.dart';
 import '../booking_home_modules/patient_data/patient_data_logic.dart';
-import '../home_tabs/home_tabs_controller.dart';
 import '../select_patient/select_patient_logic.dart';
 
 class AuthController extends BaseController {

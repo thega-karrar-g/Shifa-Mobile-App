@@ -1,14 +1,11 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:globcare/app/utils/launcher.dart';
 // import 'package:jitsi_meet_wrapper/jitsi_meet_wrapper.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../../base_controller/base_controller.dart';
 import '../../../../core/language_and_localization/app_strings.dart';
@@ -28,7 +25,6 @@ import '../../../../data/api/api_keys.dart';
 import '../../../../core/assets_helper/app_images.dart';
 import '../../../../data/api/app_urls.dart';
 import '../../../qr_scanner/qr_scanner_logic.dart';
-import '../../../webview/webview_page.dart';
 import '../../appointment_base_controllers/appointment_base_controller.dart';
 
 class InstantConsultationStatesLogic extends BaseController

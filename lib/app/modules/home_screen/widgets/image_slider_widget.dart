@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:globcare/app/global_widgets/shared/ui_helpers.dart';
-
+import 'package:carousel_slider/carousel_slider.dart' as cs;
 import '../../../core/assets_helper/app_images.dart';
 import '../../../core/theme_helper/app_colors.dart';
 import '../../../global_widgets/project_widget/image_widget/cached_image_widget.dart';
@@ -36,7 +36,7 @@ class ImageSliderWidget extends StatefulWidget {
 
 class _CarouselWithIndicatorState extends State<ImageSliderWidget> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final cs.CarouselController _controller = cs.CarouselController();
 
   @override
   Widget build(BuildContext context) {

@@ -108,7 +108,7 @@ class LocationPage extends StatelessWidget {
                                 compassEnabled: true,
                                 onCameraMove: (position) {},
                                 myLocationEnabled: true,
-                                  gestureRecognizers: Set()
+                                  gestureRecognizers:<Factory<OneSequenceGestureRecognizer>>{}
                                     ..add(Factory<OneSequenceGestureRecognizer>(
                                             () =>  EagerGestureRecognizer()))
                                     ..add(Factory<PanGestureRecognizer>(() => PanGestureRecognizer()))

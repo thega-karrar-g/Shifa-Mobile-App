@@ -174,12 +174,12 @@ class FilesLogic extends BaseController {
    filesGroup= groupFilesByData(files);
 
 
-   filesGroup.forEach((element) {
+   for (var element in filesGroup) {
 
 
      print("files length ${element.files.length }");
 
-   });
+   }
 
 
     updateLabImageStatus(true);

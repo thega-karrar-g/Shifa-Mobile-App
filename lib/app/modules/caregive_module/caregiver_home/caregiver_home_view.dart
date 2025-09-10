@@ -22,6 +22,8 @@ class CaregiverHomePage extends StatelessWidget {
   final logic = Get.put(CaregiverHomeLogic());
   static const routeName='/CaregiverHomePage';
 
+    CaregiverHomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

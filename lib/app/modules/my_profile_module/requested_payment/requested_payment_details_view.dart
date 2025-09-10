@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-
+import 'package:flutter/widget_previews.dart';
 import '../../../core/assets_helper/app_images.dart';
 import '../../../core/language_and_localization/app_strings.dart';
 import '../../../core/theme_helper/app_colors.dart';
@@ -64,8 +64,8 @@ class RequestedPaymentDetailsPage extends StatelessWidget {
                                           UiHelper.verticalSpace(16),
                                         invoiceRow(
                                             title: AppStrings.price,
-                                            value: '${BookingConstants.price
-                                                    .toStringAsFixed(0)}   ${AppStrings.currency.tr}'),
+                                            value:
+                                                '${BookingConstants.price.toStringAsFixed(0)}   ${AppStrings.currency.tr}'),
                                         Row(
                                           children: [
                                             Expanded(
@@ -174,7 +174,8 @@ class RequestedPaymentDetailsPage extends StatelessWidget {
                                       Expanded(
                                           child: Text(
                                         RequestedPaymentLogic.details,
-                                        style: AppStyles.primaryStyle(fontSize: 15),
+                                        style: AppStyles.primaryStyle(
+                                            fontSize: 15),
                                       )),
                                     ],
                                   ),
@@ -255,7 +256,9 @@ class RequestedPaymentDetailsPage extends StatelessWidget {
                                     TextSpan(
                                         text: AppStrings.termsAndConditions.tr,
                                         style: AppStyles.primaryStyle(
-                                            fontSize: 13, bold: true, height: 1.5),
+                                            fontSize: 13,
+                                            bold: true,
+                                            height: 1.5),
                                         recognizer: TapGestureRecognizer()
                                           ..onTap = () {
                                             Get.toNamed(
@@ -380,4 +383,9 @@ class RequestedPaymentDetailsPage extends StatelessWidget {
       ),
     );
   }
+}
+
+@Preview(name: 'My Sample Text')
+Widget mySpecificScreenUseCase(BuildContext context) {
+  return RequestedPaymentDetailsPage();
 }

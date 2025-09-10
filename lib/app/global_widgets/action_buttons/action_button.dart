@@ -59,23 +59,23 @@ class ActionButton extends StatelessWidget {
             onPressed: onPressed,
             clipBehavior: Clip.antiAlias,
             style: ButtonStyle(
-              fixedSize: MaterialStateProperty.all<Size>(
+              fixedSize: WidgetStateProperty.all<Size>(
                 Size(double.infinity, height.h),
               ),
-              padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+              padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
                 EdgeInsets.symmetric(horizontal: paddingH?.w ?? 8.w,vertical: paddingV?.h ?? 8.h),
               ),
-              backgroundColor: MaterialStateProperty.all<Color>(
+              backgroundColor: WidgetStateProperty.all<Color>(
                 backgroundColor ?? Get.theme.colorScheme.primary,
               ),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+              shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(
                     Radius.circular(radius),
                   ),
                 ),
               ),
-              elevation: MaterialStateProperty.all<double>(0),
+              elevation: WidgetStateProperty.all<double>(0),
             ),
             child: childWidget ??
                 Text(

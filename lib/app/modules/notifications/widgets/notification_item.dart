@@ -60,7 +60,7 @@ class NotificationItem extends StatelessWidget {
           ),
           UiHelper.verticalSpaceSmall,
           Divider(
-            color: notificationModel!.readed
+            color: notificationModel.readed
                 ? AppColors.subTitleColor
                 : AppColors.primaryColorGreen,
             thickness: 2,

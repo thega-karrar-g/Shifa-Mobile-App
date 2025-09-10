@@ -2,8 +2,6 @@
 import '../api/api_keys.dart';
 import '../api/app_urls.dart';
 import '../api/base_api.dart';
-import '../api/files_api.dart';
-import '../models/m_file.dart';
 import '../models/notification_model.dart';
 
 class NotificationsRepository extends BaseApi{

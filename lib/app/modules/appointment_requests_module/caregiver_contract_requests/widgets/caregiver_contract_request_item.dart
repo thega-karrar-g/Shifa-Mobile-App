@@ -1,11 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:globcare/app/global_widgets/shared/different_dialogs.dart';
-import 'package:intl/intl.dart';
 
 
 import '../../../../core/assets_helper/app_images.dart';
@@ -13,10 +11,8 @@ import '../../../../core/language_and_localization/app_strings.dart';
 import '../../../../core/theme_helper/app_colors.dart';
 import '../../../../core/theme_helper/app_styles.dart';
 import '../../../../data/models/caregiver_contract_model.dart';
-import '../../../../data/models/sleep_medicine_model.dart';
 import '../../../../global_widgets/shared/ui_helpers.dart';
 import '../../../../global_widgets/ui.dart';
-import '../../../../routes/app_route_names.dart';
 import '../../caregiver_contract_questionnaire/caregiver_contract_questionnaire_view.dart';
 import '../caregiver_contract_requests_controller.dart';
 

@@ -5,8 +5,6 @@ import 'package:get/get.dart';
 import 'package:globcare/app/core/theme_helper/app_colors.dart';
 import 'package:globcare/app/core/theme_helper/app_styles.dart';
 import 'package:intl/intl.dart' as intl;
-import 'package:motion_toast/motion_toast.dart';
-import 'package:motion_toast/resources/arrays.dart';
 import 'package:path/path.dart' ;
 import 'package:toastification/toastification.dart';
 

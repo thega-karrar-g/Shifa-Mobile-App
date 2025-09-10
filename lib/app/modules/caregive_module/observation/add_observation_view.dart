@@ -9,12 +9,14 @@ class AddObservationPage extends StatelessWidget {
   final logic = Get.put(ObservationLogic());
   static const routeName='/AddObservationPage';
 
+    AddObservationPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
           minimum: UiHelper.safeAreaPadding,
-          child: Column(children: [
+          child: Column(children: const [
 
 //             myAppBar2(title: AppStrings.addObservation,),
 //

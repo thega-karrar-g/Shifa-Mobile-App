@@ -153,7 +153,7 @@ String branch='';
         "experience": experience,
         "address": address,
         "is_featured": isFeatured,
-        "location": location == null ? null : location!.toJson(),
+        "location": location?.toJson(),
         "available_lines": availableLines == null
             ? null
             : List<dynamic>.from(availableLines!.map((x) => x.toJson())),

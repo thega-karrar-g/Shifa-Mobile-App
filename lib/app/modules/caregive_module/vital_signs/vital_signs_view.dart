@@ -19,6 +19,8 @@ class VitalSignsPage extends StatelessWidget {
 
   static const routeName = '/VitalSignsPage';
 
+    VitalSignsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Ui.myScaffold(

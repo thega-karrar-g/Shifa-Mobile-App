@@ -9,7 +9,6 @@ import '../../../../data/repositories/profile_repository.dart';
 import '../../../../routes/app_route_names.dart';
 import '../../../../core/assets_helper/app_images.dart';
 import '../../../../utils/ext_storage.dart';
-import '../instant_consultation_states/instant_consultation_states_logic.dart';
 
 class InstantConsultationHomeLogic extends BaseController {
   final ProfileRepository _profileRepository = ProfileRepository();

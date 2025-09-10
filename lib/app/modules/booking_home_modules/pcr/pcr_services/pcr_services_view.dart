@@ -8,7 +8,6 @@ import '../../../../global_widgets/shared/loading.dart';
 import '../../../../global_widgets/shared/my_appbar.dart';
 import '../../../../global_widgets/ui.dart';
 import 'pcr_services_logic.dart';
-import 'widgets/pcr_item.dart';
 
 class PCRServicesPage extends StatelessWidget {
   final PCRServicesLogic logic = Get.put(PCRServicesLogic());

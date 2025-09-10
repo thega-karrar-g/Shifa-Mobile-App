@@ -1,5 +1,3 @@
-import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:globcare/app/data/models/model_helper.dart';
 
 class PushNotification {

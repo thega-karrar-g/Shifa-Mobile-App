@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:globcare/app/core/theme_helper/app_colors.dart';
 import 'package:globcare/app/global_widgets/shared/my_appbar.dart';
-import 'package:globcare/app/global_widgets/shared/ui_helpers.dart';
 // import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 import '../../core/assets_helper/app_images.dart';
@@ -14,6 +13,8 @@ class PdfPage extends StatelessWidget {
   final logic = Get.put(PdfLogic());
 
   static const routeName = '/pdf';
+
+  PdfPage({super.key});
 
   @override
   Widget build(BuildContext context) {

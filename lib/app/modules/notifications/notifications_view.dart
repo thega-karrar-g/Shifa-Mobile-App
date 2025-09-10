@@ -1,12 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
 import '../../core/language_and_localization/app_strings.dart';
-import '../../core/theme_helper/app_styles.dart';
 import '../../global_widgets/shared/my_appbar.dart';
 import '../../global_widgets/shared/ui_helpers.dart';
-import '../../core/assets_helper/app_anim.dart';
 import '../drawer_module/drawer_widget/main_drawer_widget.dart';
 import 'notifications_logic.dart';
 import 'widgets/empty_notification.dart';

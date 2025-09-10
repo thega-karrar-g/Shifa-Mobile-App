@@ -17,7 +17,7 @@ class ServiceApi extends BaseApi {
         AppUrls.services,
       );
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
       //
     }
     return null;

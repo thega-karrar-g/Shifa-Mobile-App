@@ -1,7 +1,6 @@
 
 import 'package:get/get.dart';
 import 'package:globcare/app/core/theme_helper/app_colors.dart';
-import 'package:globcare/app/data/models/m_appointment.dart';
 import 'package:globcare/app/data/models/request_model.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';

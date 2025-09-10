@@ -5,7 +5,6 @@ import '../../core/language_and_localization/app_strings.dart';
 import '../../data/models/user_model.dart';
 import '../../data/repositories/profile_repository.dart';
 import '../../routes/app_route_names.dart';
-import '../booking_home_modules/instant_consultation_module/instant_consultation_states/instant_consultation_states_logic.dart';
 
 class SelectPatientLogic extends BaseController {
   final ProfileRepository _profileRepository = ProfileRepository();

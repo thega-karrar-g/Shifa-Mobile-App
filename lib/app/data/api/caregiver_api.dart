@@ -15,7 +15,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.httpGet(AppUrls.services,);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }
@@ -27,7 +27,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.dioGet(AppUrls.getVitalSigns+BaseController.recordId.toString(),);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }
@@ -37,7 +37,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.dioGet(AppUrls.getObservationList+BaseController.recordId.toString(),);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }
@@ -49,7 +49,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.dioGet(AppUrls.getPainPresent+BaseController.recordId.toString(),);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }
@@ -59,7 +59,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.dioGet(AppUrls.getPrescribedMedicine+BaseController.recordId.toString(),);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }
@@ -69,7 +69,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.dioPost(AppUrls.getPrescribedMedicineTimes,body: {'medicine_id':medicineId,'record_id':BaseController.recordId.toString()});
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }
@@ -81,7 +81,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.dioGet(AppUrls.getRecordFile+patientId);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }
@@ -91,7 +91,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.dioGet(AppUrls.getMedicineSlots+BaseController.recordId.toString(),);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }
@@ -103,7 +103,7 @@ class CaregiverApi extends BaseApi {
     try {
       var response = await api.dioPost(AppUrls.addPain.toString(),body: data);
       return response;
-    } on DioError catch (_) {
+    } on DioException catch (_) {
 
       //
     }

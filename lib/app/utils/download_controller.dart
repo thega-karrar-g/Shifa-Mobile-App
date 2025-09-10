@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:globcare/app/global_widgets/shared/different_dialogs.dart';
 
 import '../base_controller/base_controller.dart';
 import 'ext_storage.dart';

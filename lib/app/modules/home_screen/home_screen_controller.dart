@@ -21,7 +21,6 @@ import '../../global_widgets/project_widget/marquee/speed.dart';
 import '../../global_widgets/shared/different_dialogs.dart';
 import '../../routes/app_route_names.dart';
 import '../../data/api/api_keys.dart';
-import '../../services/local_notification_service.dart';
 import '../../services/push_notification_service.dart';
 import '../booking_home_modules/instant_consultation_module/instant_consultation_states/instant_consultation_states_logic.dart';
 import '../booking_home_modules/service_details/service_details_logic.dart';

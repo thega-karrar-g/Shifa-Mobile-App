@@ -43,8 +43,19 @@ class QrScannerPage extends StatelessWidget {
         UiHelper.verticalSpaceMedium,
         SizedBox(
             height: Get.height * .4,
-            child:
-                MobileScanner(allowDuplicates: false, onDetect: logic.onDetect)
+            child:   MobileScanner(
+              controller: MobileScannerController(
+                // Control scan behavior here instead of using allowDuplicates
+                detectionSpeed: DetectionSpeed.normal,
+                facing: CameraFacing.back,
+                torchEnabled: false,
+              ),
+              onDetect: (BarcodeCapture capture) {
+                // Handle detected barcodes here
+                logic.onDetect(capture,context);
+              },
+            )
+                // MobileScanner(allowDuplicates: false, onDetect: logic.onDetect)
 
             // QRView(
             //   key:logic. qrKey,

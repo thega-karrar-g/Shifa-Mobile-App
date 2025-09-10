@@ -9,7 +9,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:globcare/app/data/models/request_model.dart';
 import 'package:lottie/lottie.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:reactive_forms/reactive_forms.dart';
@@ -24,7 +23,6 @@ import '../../modules/booking_home_modules/patient_data/widgets/caregiver_contra
 import '../../modules/doctor_module/doctors/doctors_controller.dart';
 import '../../modules/my_profile_module/my_profile/my_profile_logic.dart';
 import '../../modules/qr_scanner/qr_scanner_view.dart';
-import '../../modules/webview/webview_page.dart';
 import '../../routes/app_route_names.dart';
 import '../../core/assets_helper/app_anim.dart';
 import '../../core/assets_helper/app_images.dart';

@@ -35,9 +35,6 @@ void main() async {
           projectId: 'globe-care-6b8d8',
           iosBundleId: 'com.app.globcare',
 
-
-
-
         )
     );
 

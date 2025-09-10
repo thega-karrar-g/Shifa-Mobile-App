@@ -12,6 +12,8 @@ class SelectPatientPage extends StatelessWidget {
   final logic = Get.put(SelectPatientLogic());
   final ScrollController scrollController=ScrollController();
 
+  SelectPatientPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GetBuilder<SelectPatientLogic>(builder: (logic) {

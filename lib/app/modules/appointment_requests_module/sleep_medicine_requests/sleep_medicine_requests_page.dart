@@ -14,6 +14,8 @@ class SleepMedicineRequestsPage extends StatelessWidget {
   final controller = Get.put(SleepMedicineRequestsController());
 
   static const routeName="/SleepMedicineRequestsPage";
+
+    SleepMedicineRequestsPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Ui.myScaffold(

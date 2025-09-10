@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:globcare/app/global_widgets/action_buttons/action_button.dart';
 import 'package:globcare/app/modules/booking_home_modules/book_invoice/book_invoice_logic.dart';
 
 import '../../../../core/language_and_localization/app_strings.dart';

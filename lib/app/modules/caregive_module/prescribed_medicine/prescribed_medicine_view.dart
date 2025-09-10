@@ -13,6 +13,8 @@ class PrescribedMedicinePage extends StatelessWidget {
   final logic = Get.put(PrescribedMedicineLogic());
   static const routeName = '/PrescribedMedicinePage';
 
+    PrescribedMedicinePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Ui.myScaffold(
